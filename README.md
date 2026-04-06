@@ -1,8 +1,8 @@
 PCMania
 
-Nome: Handrei Marques de Oliveira Junior
-Curso: GES
-Matrícula: 700
+- Nome: Handrei Marques de Oliveira Junior
+- Curso: GES
+- Matrícula: 700
 
 Observações:
 - Durante o desenvolvimento do projeto foi utilizado algumas vezes ajuda de um programador amigo que ja trabalha com Java para sanar algumas duvidas,
