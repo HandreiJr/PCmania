@@ -6,25 +6,25 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static final float matricula = 700;
+    private static final float MATRICULA = 700;
 
     public static void main(String[] args) {
 
-        Computador pc1 = new Computador("Apple", matricula,
+        Computador pc1 = new Computador("Apple", MATRICULA,
                 new SistemaOperacional("macOS Sequoia", 64));
         pc1.addHardwareBasico(new HardwareBasico("Processador Core i3 (MHz)", 2200));
         pc1.addHardwareBasico(new HardwareBasico("Memoria RAM (GB)", 8));
         pc1.addHardwareBasico(new HardwareBasico("HD (GB)", 500));
         pc1.addMemoriaUSB(new MemoriaUSB("Pen-drive", 16));
 
-        Computador pc2 = new Computador("Samsung", matricula + 1234,
+        Computador pc2 = new Computador("Samsung", MATRICULA + 1234,
                 new SistemaOperacional("Windows 8", 64));
         pc2.addHardwareBasico(new HardwareBasico("Processador Core i5 (MHz)", 3370));
         pc2.addHardwareBasico(new HardwareBasico("Memoria RAM (GB)", 16));
         pc2.addHardwareBasico(new HardwareBasico("HD (GB)", 1024));
         pc2.addMemoriaUSB(new MemoriaUSB("Pen-drive", 32));
 
-        Computador pc3 = new Computador("Dell", matricula + 5678,
+        Computador pc3 = new Computador("Dell", MATRICULA + 5678,
                 new SistemaOperacional("Windows 10", 64));
         pc3.addHardwareBasico(new HardwareBasico("Processador Core i7 (MHz)", 4500));
         pc3.addHardwareBasico(new HardwareBasico("Memoria RAM (GB)", 32));
@@ -50,7 +50,7 @@ public class Main {
                 cliente.addComputador(promocoes[cod - 1]);
                 System.out.println("Promoção " + cod + " adicionada ao carrinho!");
             } else if (cod != 0) {
-                System.out.println("Código inválido. Por favor, insira 1, 2, 3 ou 0.");
+                System.out.println("Código inválido... Por favor, insira 1, 2, 3 ou 0.");
             }
 
         } while (cod != 0);
